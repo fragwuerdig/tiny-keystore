@@ -50,4 +50,4 @@ npm i /path/to/tiny-keystore
 
 ### Disclaimer
 
-*Use this project only for your hot wallets that contain a workable amount of funds that you can afford to lose. This project does not claim to be super-dooper secure. It is just a layer of security that goes beyon*
+*Use this project only for your hot wallets that contain a workable amount of funds that you can afford to lose. Try to store as few secrets as possible. This project does not claim to be super-dooper-enterprise-millions-of-dollars secure. It is just a tiny layer of security that goes beyond "storing passwords on disk and in clear text"*
