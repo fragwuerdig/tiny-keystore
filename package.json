@@ -1,0 +1,27 @@
+{
+  "name": "tiny-keystore",
+  "version": "1.0.0",
+  "main": "./dist/keystore.js",
+  "types": "./keystore.d.ts",
+  "bin": {
+    "tksc": "./dist/keystore-cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/readline-sync": "^1.4.8",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.33.0",
+    "@cosmjs/stargate": "^0.33.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "readline-sync": "^1.4.10"
+  }
+}
