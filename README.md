@@ -10,7 +10,7 @@ This way it is possible to run bots that don't require user interaction while ex
 
 ### Installation
 
-Install the nmp package in your project
+Install the `npm` package in your project
 
 ```
 cd /your/awesome/project
@@ -25,10 +25,12 @@ sudo apt install keyutils
 
 ### Using It (As CLI)
 
-1. (re-) Initialize your keystore: `tksc init`
-2. lock your keystore `tksc lock`
-3. unlock your keystore `tksc unlock`
-4. store a key `tksc add <key-name>`
+From within your awesome project directory execute:
+
+1. (re-) Initialize your keystore: `npx tksc init`
+2. lock your keystore `npx tksc lock`
+3. unlock your keystore `npx tksc unlock`
+4. store a key `npx tksc add <key-name>`
 
 ### Using It (In Your Projects)
 
