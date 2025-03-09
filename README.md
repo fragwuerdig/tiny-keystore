@@ -8,29 +8,19 @@ It allows you to store and retrieve secrets in a secure (?) fashion, storing sec
 
 This way it is possible to run bots that don't require user interaction while exposing their encrypted passwords to the file system. There is a little caveat. After reboot of the OS the kernel keyring is cleared (because it's in-memory). This requires the user to interact and unlock the tiny-keystore keyring once after reboot.
 
-### Build & Installation
+### Installation
 
-Currently there is no npm package ready to download. This may be added in the future. You can use this project in 3rd party software as follows. First build this repository from source:
+Install the nmp package in your project
 
 ```
-cd ~
-git clone https://github.com/fragwuerdig/tiny-keystore
-cd tiny-keystore
-npm i
-tsc
+cd /your/awesome/project
+npm i @luncgoblins/tiny-keystore
 ```
 
 Install the necessary OS dependencies:
 
 ```
 sudo apt install keyutils
-```
-
-After that head to the project that you want "enrich" with `tiny-keystore` and install it locally via npm:
-
-```
-cd /my/awesome/project
-npm i /path/to/tiny-keystore
 ```
 
 ### Using It (As CLI)
