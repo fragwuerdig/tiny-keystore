@@ -1,0 +1,3 @@
+npm run bump-version
+npm i
+git add package.json package-lock.json

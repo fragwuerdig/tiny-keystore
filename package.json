@@ -1,13 +1,15 @@
 {
   "name": "@luncgoblins/tiny-keystore",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "./dist/keystore.js",
   "types": "./keystore.d.ts",
   "bin": {
     "tksc": "dist/keystore-cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bump-version": "scripts/bump_version.sh",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "author": "Till Ziegler (LuncGoblins)",
   "license": "Apache-2.0",
@@ -15,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^22.13.10",
     "@types/readline-sync": "^1.4.8",
+    "husky": "^9.1.7",
     "typescript": "^5.8.2"
   },
   "dependencies": {

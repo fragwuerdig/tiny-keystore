@@ -4,6 +4,13 @@ import * as readlineSync from 'readline-sync';
 import { Command } from 'commander';
 import { Keystore, KEY_DESCRIPTION, getKeyId } from './keystore';
 import { execSync } from 'child_process';
+import { VERSION } from "./version";
+import * as fs from 'fs';
+
+function getVersion() {
+    const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+    return packageJson.version;
+}
 
 async function keystoreInit() {
     await keystoreUnlock();
@@ -15,7 +22,7 @@ async function keystoreUnlock() {
     const password = readlineSync.question('Enter your password: ', {
         hideEchoBack: true,
     });
-    const keyName = "tiny_keystore";
+    const keyName = KEY_DESCRIPTION;
     const storeCommand = `keyctl add user ${keyName} ${password} @u`;
     execSync(storeCommand).toString().trim();
 }
@@ -69,7 +76,7 @@ const program = new Command();
 program
     .name('keystore')
     .description('CLI to manage keystore')
-    .version('1.0.0');
+    .version(VERSION);
 
 program
     .command('init')
