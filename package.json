@@ -1,5 +1,5 @@
 {
-  "name": "tiny-keystore",
+  "name": "@luncgoblins/tiny-keystore",
   "version": "1.0.0",
   "main": "./dist/keystore.js",
   "types": "./keystore.d.ts",
